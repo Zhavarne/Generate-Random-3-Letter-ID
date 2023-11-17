@@ -1,0 +1,16 @@
+import random
+import string
+
+# Function to generate a random 3-letter ID
+def generate_random_id():
+    letters = ''.join(random.choice(string.ascii_uppercase) for _ in range(3))
+    return letters
+
+# Number of unique IDs to generate
+num_ids = 10
+
+# Generate random IDs
+random_ids = [generate_random_id() for _ in range(num_ids)]
+
+# Display the generated IDs
+random_ids
